@@ -997,9 +997,10 @@ def test_soil_band5_present_band7_excluded(hass):
     st = station("soil_station.json")
     fields = {m.field for m in st.active_fields()}
     assert "soil_moisture_at_depth_51" in fields
-    assert "soil_temperature_at_depth_05" not in fields  # band5 temp is null in fixture
+    assert "soil_temperature_at_depth_51" in fields
     assert "soil_moisture_at_depth_71" not in fields
     assert "soil_moisture_at_depth_61" not in fields
+    assert "soil_temperature_at_depth_71" not in fields
 
 
 def test_device_info(hass):
@@ -1162,7 +1163,7 @@ Add platform registration to `__init__.py`'s `PLATFORMS` (already `["sensor"]`).
 - [ ] **Step 4: Run test to verify it passes**
 
 Run: `python -m pytest tests/test_sensor.py -v`
-Expected: PASS (11 tests). Note `soil_temperature_at_depth_05` is null in the fixture (band 5 temp = 25.18 at field `soil_temperature_at_depth_51` — verify the test assertion matches; adjust the test's band assertion to the fields actually present if needed).
+Expected: PASS (11 tests). The soil fixture has band 5 temp = 25.18 (`soil_temperature_at_depth_51`) and band 5 moisture = 25.79 (`soil_moisture_at_depth_51`), both present; bands 6–7 are sentinels and excluded.
 
 - [ ] **Step 5: Commit**
 
