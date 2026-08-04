@@ -35,17 +35,6 @@ def _station_options(features: list[dict]) -> dict[str, str]:
     return dict(sorted(options.items(), key=lambda kv: kv[1]))
 
 
-def _select(name, options, default=None, required=True):
-    cfg = selector.SelectSelectorConfig(
-        options=[selector.SelectOptionDict(value=k, label=v) for k, v in options.items()],
-        multiple=True,
-        mode=selector.SelectSelectorMode.DROPDOWN,
-    )
-    if required:
-        return vol.Required(name, default=default) if default is not None else vol.Required(name)
-    return vol.Optional(name, default=default)
-
-
 def _schema(options, current=None, scan_interval=DEFAULT_SCAN_INTERVAL):
     fields = {
         vol.Required(

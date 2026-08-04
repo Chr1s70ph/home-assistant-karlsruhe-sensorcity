@@ -1,5 +1,4 @@
 """Tests for the pure-Python ArcGIS REST client."""
-import asyncio
 import json
 from datetime import datetime, timezone
 from pathlib import Path

@@ -5,7 +5,6 @@ from pathlib import Path
 from custom_components.karlsruhe_sensorcity.models import (
     CATALOG,
     SENTINELS,
-    Station,
     field_value,
     parse_station,
 )

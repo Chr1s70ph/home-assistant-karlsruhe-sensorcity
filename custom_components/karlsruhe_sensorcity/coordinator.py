@@ -62,7 +62,7 @@ class SensorCityDataUpdateCoordinator(DataUpdateCoordinator):
                     result_record_count=1,
                     return_geometry=False,
                 )
-            except Exception as exc:
+            except Exception as exc:  # noqa: BLE001
                 _LOGGER.warning("Live+ enrichment failed for %s: %s", device_id, exc)
                 continue
             if not rows:
