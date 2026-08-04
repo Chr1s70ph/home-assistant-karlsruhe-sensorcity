@@ -1,0 +1,274 @@
+{
+  "features": [
+    {
+      "attributes": {
+        "messeinheit_hoehe": null,
+        "uv_a_strahlung": null,
+        "typ": null,
+        "beschreibung": "Temperatur-Sensor",
+        "bodentemperatur": null,
+        "sonnenstrahlung": 172,
+        "messeinheit_tiefe": null,
+        "niederschlag": 24,
+        "packet_id": "b4c301a0-ba96-4241-9894-99ece05006fc",
+        "anwendung": null,
+        "id": "51a0e1e7-767c-4a2e-8b70-c89ab43ec64f",
+        "press": 98285,
+        "bodenfeuchte": null,
+        "inserted_at": 1785861505066,
+        "pegel": null,
+        "temperaturkategorien": "Sehr heiss",
+        "measured_at": 1785861504808,
+        "art": null,
+        "temp": 33.1,
+        "device_id": "fa0d211f-3f9c-423c-a5ae-fd34424ab649",
+        "batteriestatus": 4.15,
+        "uv_b_strahlung": null,
+        "archiviert": null,
+        "pm10": null,
+        "windgeschwindigkeit": null,
+        "parser_id": "e6a91b5f-54fb-42c0-8e9d-b90a55841ba7",
+        "pm25": null,
+        "quelle": null,
+        "name": "170 - Elsa-Braendstroem-Strasse (Bergwald)",
+        "luftfeuchte": 40.2,
+        "objectid": 290524
+      }
+    }
+  ],
+  "fields": [
+    {
+      "defaultValue": null,
+      "type": "esriFieldTypeOID",
+      "modelName": "objectid",
+      "name": "objectid",
+      "alias": "OBJECTID"
+    },
+    {
+      "modelName": "parser_id",
+      "defaultValue": null,
+      "name": "parser_id",
+      "length": 1000000,
+      "alias": "parser_id",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "device_id",
+      "defaultValue": null,
+      "name": "device_id",
+      "length": 1000000,
+      "alias": "device_id",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "packet_id",
+      "defaultValue": null,
+      "name": "packet_id",
+      "length": 1000000,
+      "alias": "packet_id",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "inserted_at",
+      "defaultValue": null,
+      "name": "inserted_at",
+      "length": 29,
+      "alias": "inserted_at",
+      "type": "esriFieldTypeDate"
+    },
+    {
+      "modelName": "measured_at",
+      "defaultValue": null,
+      "name": "measured_at",
+      "length": 29,
+      "alias": "measured_at",
+      "type": "esriFieldTypeDate"
+    },
+    {
+      "modelName": "id",
+      "defaultValue": null,
+      "name": "id",
+      "length": 1000000,
+      "alias": "id",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "name",
+      "defaultValue": null,
+      "name": "name",
+      "length": 1000000,
+      "alias": "name",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "typ",
+      "defaultValue": null,
+      "name": "typ",
+      "length": 1000000,
+      "alias": "typ",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "art",
+      "defaultValue": null,
+      "name": "art",
+      "length": 1000000,
+      "alias": "art",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "quelle",
+      "defaultValue": null,
+      "name": "quelle",
+      "length": 1000000,
+      "alias": "quelle",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "beschreibung",
+      "defaultValue": null,
+      "name": "beschreibung",
+      "length": 1000000,
+      "alias": "beschreibung",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "messeinheit_hoehe",
+      "defaultValue": null,
+      "name": "messeinheit_hoehe",
+      "length": 1000000,
+      "alias": "messeinheit_hoehe",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "messeinheit_tiefe",
+      "defaultValue": null,
+      "name": "messeinheit_tiefe",
+      "length": 1000000,
+      "alias": "messeinheit_tiefe",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "batteriestatus",
+      "defaultValue": null,
+      "name": "batteriestatus",
+      "alias": "batteriestatus",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "press",
+      "defaultValue": null,
+      "name": "press",
+      "alias": "press",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "temp",
+      "defaultValue": null,
+      "name": "temp",
+      "alias": "temp",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "luftfeuchte",
+      "defaultValue": null,
+      "name": "luftfeuchte",
+      "alias": "luftfeuchte",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "bodentemperatur",
+      "defaultValue": null,
+      "name": "bodentemperatur",
+      "alias": "bodentemperatur",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "bodenfeuchte",
+      "defaultValue": null,
+      "name": "bodenfeuchte",
+      "alias": "bodenfeuchte",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "pm10",
+      "defaultValue": null,
+      "name": "pm10",
+      "alias": "pm10",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "pm25",
+      "defaultValue": null,
+      "name": "pm25",
+      "alias": "pm25",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "sonnenstrahlung",
+      "defaultValue": null,
+      "name": "sonnenstrahlung",
+      "alias": "sonnenstrahlung",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "uv_a_strahlung",
+      "defaultValue": null,
+      "name": "uv_a_strahlung",
+      "alias": "uv_a_strahlung",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "uv_b_strahlung",
+      "defaultValue": null,
+      "name": "uv_b_strahlung",
+      "alias": "uv_b_strahlung",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "niederschlag",
+      "defaultValue": null,
+      "name": "niederschlag",
+      "alias": "niederschlag",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "pegel",
+      "defaultValue": null,
+      "name": "pegel",
+      "alias": "pegel",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "windgeschwindigkeit",
+      "defaultValue": null,
+      "name": "windgeschwindigkeit",
+      "alias": "windgeschwindigkeit",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "anwendung",
+      "defaultValue": null,
+      "name": "anwendung",
+      "length": 1000000,
+      "alias": "Anwendung",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "temperaturkategorien",
+      "defaultValue": null,
+      "name": "temperaturkategorien",
+      "length": 255,
+      "alias": "Temperaturkategorien",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "archiviert",
+      "defaultValue": null,
+      "name": "archiviert",
+      "length": 255,
+      "alias": "archiviert",
+      "type": "esriFieldTypeString"
+    }
+  ]
+}

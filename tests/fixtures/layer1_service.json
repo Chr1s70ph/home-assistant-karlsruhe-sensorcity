@@ -1,0 +1,29 @@
+{
+  "maxRecordCount": 2000,
+  "layers": [
+    {
+      "name": "Sensordaten_Update",
+      "id": 1,
+      "type": "Feature Layer",
+      "geometryType": "esriGeometryPoint"
+    },
+    {
+      "name": "NodeRED_Temperatur_Archiv",
+      "id": 2,
+      "type": "Feature Layer",
+      "geometryType": "esriGeometryPoint"
+    },
+    {
+      "name": "NodeRED_Regenschreiber_Archiv",
+      "id": 3,
+      "type": "Feature Layer",
+      "geometryType": "esriGeometryPoint"
+    },
+    {
+      "name": "NodeRED_Bodensensoren_Archiv",
+      "id": 4,
+      "type": "Feature Layer",
+      "geometryType": "esriGeometryPoint"
+    }
+  ]
+}

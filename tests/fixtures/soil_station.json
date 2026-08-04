@@ -1,0 +1,460 @@
+{
+  "features": [
+    {
+      "attributes": {
+        "soil_moisture_at_depth_51": 25.79,
+        "messeinheit_hoehe": null,
+        "typ": null,
+        "soil_moisture_at_depth_11": 24.47,
+        "sonnenstrahlung": null,
+        "messeinheit_tiefe": null,
+        "soil_temperature_at_depth_01": 32.37,
+        "packet_id": "87a7e1de-f308-4a96-941b-0872c32abf4c",
+        "soil_temperature_at_depth_41": 26.12,
+        "id": "82eafb62-a0f1-416a-98e8-09d57f218b94",
+        "press": null,
+        "inserted_at": 1785860459552,
+        "lat": null,
+        "baumart": "Populus nigra 'Italica'",
+        "temperaturkategorien": null,
+        "measured_at": 1785860459292,
+        "soil_moisture_at_depth_41": 16.88,
+        "device_id": "694e9707-1eac-4d63-95eb-f7f23848e3d0",
+        "soil_moisture_at_depth_01": 23.52,
+        "soil_temperature_at_depth_31": 26.56,
+        "name": "069 - Citypark",
+        "fillinglvl_percent": null,
+        "luftfeuchte": null,
+        "soil_temperature_at_depth_71": -327.68,
+        "device": null,
+        "soil_moisture_at_depth_31": 12.568,
+        "battery_voltage": "3.058",
+        "stadtteil": "Südstadt",
+        "soil_moisture_at_depth_71": -5,
+        "lon": null,
+        "standortnummer": 69,
+        "beschreibung": "Boden-Sensor",
+        "bodentemperatur": null,
+        "soil_temperature_at_depth_21": 27.93,
+        "soil_temperature_at_depth_61": -327.68,
+        "anwendung": null,
+        "bodenfeuchte": null,
+        "pegel": null,
+        "soil_moisture_at_depth_61": -5,
+        "temp": null,
+        "art": null,
+        "batteriestatus": null,
+        "einbaudatum": 1779314400000,
+        "standort": "Citypark",
+        "soil_moisture_at_depth_21": 15.762,
+        "soil_temperature_at_depth_11": 29.56,
+        "parser_id": "c9b60e96-232f-42c5-a120-6e2e9f9db130",
+        "protocol_version": null,
+        "soil_temperature_at_depth_51": 25.18,
+        "fuellstatus": null,
+        "quelle": "Stadt Karlsruhe",
+        "clicks": null,
+        "objectid": 70
+      },
+      "geometry": {
+        "x": 8.420946234000041,
+        "y": 49.00168395000003
+      }
+    }
+  ],
+  "fields": [
+    {
+      "defaultValue": null,
+      "type": "esriFieldTypeOID",
+      "modelName": "objectid",
+      "name": "objectid",
+      "alias": "OBJECTID"
+    },
+    {
+      "modelName": "device_id",
+      "defaultValue": null,
+      "name": "device_id",
+      "length": 1000000,
+      "alias": "device_id",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "name",
+      "defaultValue": null,
+      "name": "name",
+      "length": 1000000,
+      "alias": "name",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "beschreibung",
+      "defaultValue": null,
+      "name": "beschreibung",
+      "length": 1000000,
+      "alias": "beschreibung",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "temp",
+      "defaultValue": null,
+      "name": "temp",
+      "alias": "temp",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "temperaturkategorien",
+      "defaultValue": null,
+      "name": "temperaturkategorien",
+      "length": 255,
+      "alias": "Temperaturkategorien",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "fillinglvl_percent",
+      "defaultValue": null,
+      "name": "fillinglvl_percent",
+      "alias": "fillinglvl_percent",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "fuellstatus",
+      "defaultValue": null,
+      "name": "fuellstatus",
+      "length": 1000000,
+      "alias": "fuellstatus",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "pegel",
+      "defaultValue": null,
+      "name": "pegel",
+      "alias": "pegel",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "clicks",
+      "defaultValue": null,
+      "name": "clicks",
+      "alias": "clicks",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "parser_id",
+      "defaultValue": null,
+      "name": "parser_id",
+      "length": 1000000,
+      "alias": "parser_id",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "packet_id",
+      "defaultValue": null,
+      "name": "packet_id",
+      "length": 1000000,
+      "alias": "packet_id",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "inserted_at",
+      "defaultValue": null,
+      "name": "inserted_at",
+      "length": 29,
+      "alias": "inserted_at",
+      "type": "esriFieldTypeDate"
+    },
+    {
+      "modelName": "measured_at",
+      "defaultValue": null,
+      "name": "measured_at",
+      "length": 29,
+      "alias": "measured_at",
+      "type": "esriFieldTypeDate"
+    },
+    {
+      "modelName": "id",
+      "defaultValue": null,
+      "name": "id",
+      "length": 1000000,
+      "alias": "id",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "typ",
+      "defaultValue": null,
+      "name": "typ",
+      "length": 1000000,
+      "alias": "typ",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "art",
+      "defaultValue": null,
+      "name": "art",
+      "length": 1000000,
+      "alias": "art",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "quelle",
+      "defaultValue": null,
+      "name": "quelle",
+      "length": 1000000,
+      "alias": "quelle",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "messeinheit_hoehe",
+      "defaultValue": null,
+      "name": "messeinheit_hoehe",
+      "length": 1000000,
+      "alias": "messeinheit_hoehe",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "messeinheit_tiefe",
+      "defaultValue": null,
+      "name": "messeinheit_tiefe",
+      "length": 1000000,
+      "alias": "messeinheit_tiefe",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "batteriestatus",
+      "defaultValue": null,
+      "name": "batteriestatus",
+      "alias": "batteriestatus",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "press",
+      "defaultValue": null,
+      "name": "press",
+      "alias": "press",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "luftfeuchte",
+      "defaultValue": null,
+      "name": "luftfeuchte",
+      "alias": "luftfeuchte",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "sonnenstrahlung",
+      "defaultValue": null,
+      "name": "sonnenstrahlung",
+      "alias": "sonnenstrahlung",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "anwendung",
+      "defaultValue": null,
+      "name": "anwendung",
+      "length": 1000000,
+      "alias": "Anwendung",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "lat",
+      "defaultValue": null,
+      "name": "lat",
+      "alias": "lat",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "lon",
+      "defaultValue": null,
+      "name": "lon",
+      "alias": "lon",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "standort",
+      "defaultValue": null,
+      "name": "standort",
+      "length": 1000000,
+      "alias": "standort",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "soil_temperature_at_depth_71",
+      "defaultValue": null,
+      "name": "soil_temperature_at_depth_71",
+      "alias": "Soil temperature at depth 7",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "soil_temperature_at_depth_61",
+      "defaultValue": null,
+      "name": "soil_temperature_at_depth_61",
+      "alias": "Soil temperature at depth 6",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "soil_temperature_at_depth_51",
+      "defaultValue": null,
+      "name": "soil_temperature_at_depth_51",
+      "alias": "Soil temperature at depth 5",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "soil_temperature_at_depth_41",
+      "defaultValue": null,
+      "name": "soil_temperature_at_depth_41",
+      "alias": "Soil temperature at depth 4",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "soil_temperature_at_depth_31",
+      "defaultValue": null,
+      "name": "soil_temperature_at_depth_31",
+      "alias": "Soil temperature at depth 3",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "soil_temperature_at_depth_21",
+      "defaultValue": null,
+      "name": "soil_temperature_at_depth_21",
+      "alias": "Soil temperature at depth 2",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "soil_temperature_at_depth_11",
+      "defaultValue": null,
+      "name": "soil_temperature_at_depth_11",
+      "alias": "Soil temperature at depth 1",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "soil_temperature_at_depth_01",
+      "defaultValue": null,
+      "name": "soil_temperature_at_depth_01",
+      "alias": "Soil temperature at depth 0",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "soil_moisture_at_depth_71",
+      "defaultValue": null,
+      "name": "soil_moisture_at_depth_71",
+      "alias": "Soil moisture at depth 7",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "soil_moisture_at_depth_61",
+      "defaultValue": null,
+      "name": "soil_moisture_at_depth_61",
+      "alias": "Soil moisture at depth 6",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "soil_moisture_at_depth_51",
+      "defaultValue": null,
+      "name": "soil_moisture_at_depth_51",
+      "alias": "Soil moisture at depth 5",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "soil_moisture_at_depth_41",
+      "defaultValue": null,
+      "name": "soil_moisture_at_depth_41",
+      "alias": "Soil moisture at depth 4",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "soil_moisture_at_depth_31",
+      "defaultValue": null,
+      "name": "soil_moisture_at_depth_31",
+      "alias": "Soil moisture at depth 3",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "soil_moisture_at_depth_21",
+      "defaultValue": null,
+      "name": "soil_moisture_at_depth_21",
+      "alias": "Soil moisture at depth 2",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "soil_moisture_at_depth_11",
+      "defaultValue": null,
+      "name": "soil_moisture_at_depth_11",
+      "alias": "Soil moisture at depth 1",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "soil_moisture_at_depth_01",
+      "defaultValue": null,
+      "name": "soil_moisture_at_depth_01",
+      "alias": "Soil moisture at depth 0",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "einbaudatum",
+      "defaultValue": null,
+      "name": "einbaudatum",
+      "length": 29,
+      "alias": "Einbaudatum",
+      "type": "esriFieldTypeDate"
+    },
+    {
+      "modelName": "protocol_version",
+      "defaultValue": null,
+      "name": "protocol_version",
+      "alias": "Protocol version",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "device",
+      "defaultValue": null,
+      "name": "device",
+      "alias": "Device",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "battery_voltage",
+      "defaultValue": null,
+      "name": "battery_voltage",
+      "length": 255,
+      "alias": "Battery voltage",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "standortnummer",
+      "defaultValue": null,
+      "name": "standortnummer",
+      "alias": "Standortnummer",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "baumart",
+      "defaultValue": null,
+      "name": "baumart",
+      "length": 255,
+      "alias": "Baumart",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "bodenfeuchte",
+      "defaultValue": null,
+      "name": "bodenfeuchte",
+      "alias": "bodenfeuchte",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "bodentemperatur",
+      "defaultValue": null,
+      "name": "bodentemperatur",
+      "alias": "bodentemperatur",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "stadtteil",
+      "defaultValue": null,
+      "name": "stadtteil",
+      "length": 255,
+      "alias": "stadtteil",
+      "type": "esriFieldTypeString"
+    }
+  ],
+  "exceededTransferLimit": true
+}

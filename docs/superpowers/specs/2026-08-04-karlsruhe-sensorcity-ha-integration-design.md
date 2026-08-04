@@ -87,6 +87,13 @@ Append `?f=json` for service/layer metadata. Query endpoint:
 `niederschlag` (plus the same core fields as layer 1). Layer 2's newest
 `measured_at` observed at 2026-08-04T16:36 UTC — i.e. near-real-time.
 
+> **Data-availability finding (2026-08-04).** Queried across the whole layer-2
+> archive, `pm10`, `pm25`, `uv_a_strahlung`, `uv_b_strahlung`, and
+> `windgeschwindigkeit` return **zero non-null rows** — the fields exist in the
+> schema but carry no data today. Only `niederschlag` is populated (small
+> integers, e.g. `1`, `24`). This drives the dynamic entity-creation rule in
+> §8: we never hardcode the assumption that these fields are populated.
+
 ### Key fields & conventions
 
 - `measured_at`, `inserted_at` — epoch **milliseconds**, UTC. Divide by 1000 for
@@ -249,6 +256,30 @@ Options flow (add/remove station / interval) → reload entry → entities rebui
 | Wasserpegel | `pegel` | distance | cm | measurement | "Water level" |
 | Regenschreiber | `clicks` | — | tips | total_increasing | "Rain counter" |
 | any (where present) | `batteriestatus` / `battery_voltage` | voltage | V | measurement | entity_category diagnostic |
+
+### Dynamic entity creation (handles variable field availability)
+
+The measurement registry above is a **catalog** of every field the integration
+knows how to label and unit-ize. But a station does **not** get an entity for
+every catalog field — only for fields it actually reports. This avoids
+permanently-dead entities (e.g. PM/UV/wind, which are null across the archive
+today per §4).
+
+**Rule:** the set of active fields per station is derived **once**, from the
+first successful coordinator refresh after setup:
+- For each selected station, for each field in that category's catalog, the
+  field is **active** iff its merged value (layer-1 value, overridden by the
+  layer-2 newest row for live+ fields when non-null) is **not null and not a
+  known sentinel**.
+- Soil bands 6 and 7 are never active (sentinel values -327.68 degC / -5 %).
+- One `SensorEntity` is created per (station, active field). This set is stable
+  for the life of the config entry.
+- On a later poll, if an active field's value becomes null, the entity reports
+  **unavailable** (state `None`) — the entity object persists, it is not
+  deleted.
+- Reloading the config entry (options flow save, or HA restart) re-derives the
+  active-field set, so newly-reporting fields appear and removed stations'
+  entities are cleaned up by HA's entity registry.
 
 ### State & availability
 - State = the field's numeric value (or counter for `clicks`).
