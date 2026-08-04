@@ -7,6 +7,8 @@ station with one sensor entity per measurement the station reports
 (temperature, humidity, pressure, soil moisture/temperature, water level, rain,
 and more when available).
 
+![Example](docs/images/example.png)
+
 ## Installation (HACS)
 
 1. In HACS, add a **custom repository** with this repo's URL, type
