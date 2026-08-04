@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Karlsruhe SensorCity",
+        "description": "Select the sensor stations you want to expose in Home Assistant.",
+        "data": {
+          "stations": "Stations",
+          "scan_interval": "Polling interval (minutes)"
+        }
+      }
+    },
+    "error": {
+      "select_one": "Select at least one station."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Karlsruhe SensorCity options",
+        "description": "Add or remove stations, and set the polling interval.",
+        "data": {
+          "stations": "Stations",
+          "scan_interval": "Polling interval (minutes)"
+        }
+      }
+    },
+    "error": {
+      "select_one": "Select at least one station."
+    }
+  }
+}
