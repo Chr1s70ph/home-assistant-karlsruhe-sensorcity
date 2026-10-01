@@ -1,11 +1,17 @@
 # Karlsruhe SensorCity (Home Assistant)
 
+<img src="custom_components/karlsruhe_sensorcity/brand/icon.png" alt="Karlsruhe SensorCity community integration icon" width="128" height="128">
+
 A custom integration that exposes the City of Karlsruhe's public SensorCity
 sensor network in Home Assistant. You pick the stations you care about from a
 searchable list, and the integration creates a Home Assistant device per
 station with one sensor entity per measurement the station reports
 (temperature, humidity, pressure, soil moisture/temperature, water level, rain,
 and more when available).
+
+This is an independent community integration, not affiliated with or endorsed
+by the City of Karlsruhe or the SensorCity project. The icon is original
+project artwork, not the official SensorCity logo.
 
 ![Example](docs/images/example.png)
 
@@ -15,6 +21,8 @@ and more when available).
    **Integration**.
 2. Find "Karlsruhe SensorCity" and **Download** it.
 3. Restart Home Assistant.
+
+The bundled integration icon is supported in Home Assistant 2026.3 and newer.
 
 ## Configuration
 
@@ -49,3 +57,6 @@ extra measurements (precipitation; PM/UV/wind when the source publishes them).
 ## License
 
 MIT
+
+The original icon artwork is also MIT licensed. Its editable source is
+[`docs/images/icon.svg`](docs/images/icon.svg).

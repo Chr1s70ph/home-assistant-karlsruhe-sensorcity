@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <title>Karlsruhe SensorCity community integration</title>
+  <desc>A city skyline beneath a wireless sensor signal on a navy square.</desc>
+  <rect width="256" height="256" rx="48" fill="#142d3b"/>
+  <g fill="none" stroke="#f5c65d" stroke-width="12" stroke-linecap="round">
+    <path d="M78 65a71 71 0 0 1 100 0"/>
+    <path d="M102 89a37 37 0 0 1 52 0"/>
+  </g>
+  <circle cx="128" cy="112" r="8" fill="#f5c65d"/>
+  <path d="M40 216v-64h44v64m16 0v-76h56v76m16 0v-52h44v52" fill="#70dfc5"/>
+  <path d="M56 168h12m-12 24h12m52-32h16m-16 24h16m52 0h12" stroke="#142d3b" stroke-width="8"/>
+  <path d="M36 216h184" stroke="#70dfc5" stroke-width="8" stroke-linecap="round"/>
+</svg>

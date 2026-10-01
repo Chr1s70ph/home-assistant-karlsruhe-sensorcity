@@ -1,10 +1,10 @@
 {
   "domain": "karlsruhe_sensorcity",
   "name": "Karlsruhe SensorCity",
-  "documentation": "https://github.com/Chr1s70ph/home-assistant-karlsruhe-sensorcity",
-  "issue_github": "https://github.com/Chr1s70ph/home-assistant-karlsruhe-sensorcity/issues",
-  "codeowners": ["Chr1s70ph"],
+  "codeowners": ["@Chr1s70ph"],
   "config_flow": true,
+  "documentation": "https://github.com/Chr1s70ph/home-assistant-karlsruhe-sensorcity",
   "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/Chr1s70ph/home-assistant-karlsruhe-sensorcity/issues",
   "version": "0.1.0"
 }
