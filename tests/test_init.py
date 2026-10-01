@@ -22,7 +22,6 @@ def test_manifest_loads():
     assert manifest["domain"] == "karlsruhe_sensorcity"
     assert manifest["config_flow"] is True
     assert manifest["iot_class"] == "cloud_polling"
-    assert manifest["version"] == "0.1.0"
 
 
 @pytest.mark.asyncio

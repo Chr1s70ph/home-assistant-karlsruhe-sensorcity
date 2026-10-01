@@ -2,6 +2,8 @@ name: Validate
 
 on:
   push:
+    branches: ["**"]
+    tags: ["v*"]
   pull_request:
   schedule:
     - cron: "0 0 * * 1"
@@ -11,6 +13,31 @@ permissions:
   contents: read
 
 jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: requirements_test.txt
+      - name: Check release version
+        if: startsWith(github.ref, 'refs/tags/')
+        shell: python
+        run: |
+          import json
+          import os
+          from pathlib import Path
+          import re
+
+          tag = os.environ["GITHUB_REF_NAME"]
+          version = json.loads(Path("custom_components/karlsruhe_sensorcity/manifest.json").read_text())["version"]
+          if not re.fullmatch(r"v\d+\.\d+\.\d+", tag) or tag != f"v{version}":
+              raise SystemExit(f"Release tag {tag!r} must be v{version} (vX.Y.Z).")
+      - run: python -m pip install -r requirements_test.txt
+      - run: python -m pytest -q
+
   hacs:
     runs-on: ubuntu-latest
     steps:
@@ -23,3 +50,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: home-assistant/actions/hassfest@master
+
+  release:
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    needs: [tests, hacs, hassfest]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: gh release create "$GITHUB_REF_NAME" --verify-tag --generate-notes
