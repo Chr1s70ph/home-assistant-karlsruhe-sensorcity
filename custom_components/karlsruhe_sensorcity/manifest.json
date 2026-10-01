@@ -6,5 +6,5 @@
   "documentation": "https://github.com/Chr1s70ph/home-assistant-karlsruhe-sensorcity",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/Chr1s70ph/home-assistant-karlsruhe-sensorcity/issues",
-  "version": "0.1.0"
+  "version": "1.0.0"
 }
